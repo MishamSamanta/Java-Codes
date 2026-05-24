@@ -6,14 +6,45 @@ public class working_with_methods {
         
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int n = scanner.nextInt();
-        double result = square(n);
-        System.out.printf("The square is %f\n", result);
-        
+    //for double
+        // System.out.print("Enter a number: ");
+        // int n = scanner.nextInt();
+        // double result = square(n);
+        // System.out.printf("The square is %f\n", result);
+
+    //for boolean
+        // System.out.println("Enter your age: ");
+
+        // int age = scanner.nextInt();
+        // boolean check = ageCheck(age);
+        // if(check == true){
+        //     System.out.println("Your are eligible to vote");
+        // }
+        // else{
+        //     System.out.println("You need to be 18+ sorry");
+        // }
+
+        System.out.println("Enter your name: ");
+        String you = scanner.nextLine();
+        String result = intro(you);
+        System.out.println(result);
     }
 
     static double square(double number){
         return number * number;
+    }
+    static boolean ageCheck(int age){
+        if(age>=18){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+        // return age>=18; thsi will also work and it is shrotcut 
+    }
+    static String intro(String name){
+        return "Hello "+ name;
+
     }
 }
