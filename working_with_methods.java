@@ -24,10 +24,17 @@ public class working_with_methods {
         //     System.out.println("You need to be 18+ sorry");
         // }
 
-        System.out.println("Enter your name: ");
-        String you = scanner.nextLine();
-        String result = intro(you);
-        System.out.println(result);
+    //for string
+        // System.out.println("Enter your name: ");
+        // String you = scanner.nextLine();
+        // String result = intro(you);
+        // System.out.println(result);
+
+    //for void
+        System.out.println("Enter the job you wanna do: ");
+        String p = scanner.nextLine();
+        showJob(p);
+    
     }
 
     static double square(double number){
@@ -46,5 +53,8 @@ public class working_with_methods {
     static String intro(String name){
         return "Hello "+ name;
 
+    }
+    static void showJob(String work){
+        System.out.println("Your job is to do "+ work);
     }
 }
