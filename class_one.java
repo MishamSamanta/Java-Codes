@@ -4,6 +4,13 @@ public class class_one {
         
         String[] fruits = {"apple", "Bananna", "Mango", "Grape"};
 
-        System.out.println(fruits[0]);
+        // System.out.println(fruits[0]);
+
+        // enhanced for loop
+
+        for (String fruit : fruits){
+            
+            System.out.println(fruit);
+        }
     }
 }
